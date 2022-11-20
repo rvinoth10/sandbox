@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* home section */
+
+#home .container div h1 {
+    font-size: 50px;
+    opacity: 0.8;
+}
+
+#home .container div p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+
+/* service section */
+
+#service,
+#customer {
+    box-shadow: inset 0px 400px 100px #00d0ff09;
+}
+
+#service .container div h1 {
+    font-size: 50px;
+    opacity: 0.8;
+    margin: 3% 10%;
+}
+
+
+/* str section */
+
+#str .card {
+    box-shadow: 0px 0px 30px rgb(219, 219, 219);
+    border: none;
+}
+
+#str .row .left:nth-child(1) p,
+#str .row .left h1 {
+    opacity: 0.9;
+}
+
+#str .row .left p {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+#str .card:nth-child(2) {
+    transform: translateX(50px);
+}
+
+#str .card div .rounded-pill {
+    background-color: rgba(127, 255, 212, 0.411);
+}
+
+#str .card div p,
+#str .card div h2 {
+    opacity: 0.8;
+}
+
+
+/* solution section */
+
+#solve .accordion-button,
+#solve .accordion-item {
+    background: transparent !important;
+}
+
+#solve .accordion-item .accordion-body p {
+    opacity: 0.8;
+}
+
+#solve {
+    box-shadow: inset 0px -400px 60px rgba(0, 208, 255, 0.036);
+}
+
+
+/* company fact section */
+
+#compFacts .box-1 div i {
+    background-color: rgba(127, 255, 212, 0.411);
+    padding: 15px;
+    font-size: larger;
+    border-radius: 50%;
+    color: rgb(0, 247, 255);
+}
+
+#compFacts .box-2 .card {
+    box-shadow: 0px 0px 30px lightgray;
+    padding: 2rem;
+    margin: 3px;
+}
+
+#compFacts .box-2 .card .card-img-top img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(245, 241, 241);
+}
+
+
+/* Latest Project Section */
+
+#Lproject .carousel-indicators {
+    transform: translateY(60px);
+}
+
+#Lproject .carousel-item .carousel-caption {
+    text-shadow: 0px 0px 10px rgb(99, 98, 98);
+    background-color: rgba(0, 153, 255, 0.452);
+}
+
+#Lproject .carousel-item img {
+    height: 100vh;
+}
+
+#Lproject .carousel-indicators a {
+    padding: .5rem;
+}
+
+
+/* customer section */
+
+#customer .row .col-12 {
+    margin: 14px auto;
+}
+
+#customer .row .card {
+    margin: 0rem .5rem;
+}
+
+#customer .row .pcard {
+    box-shadow: 0px 0px 40px lightgray;
+    padding: 1rem;
+}
+
+#customer .row .col-lg-4:nth-child(4) {
+    transform: translateY(-75px);
+}
+
+#customer .row .col-lg-4:nth-child(6) {
+    transform: translateY(-25px);
+}
+
+#customer .row .col-12 p {
+    opacity: 0.8;
+}
+
+#customer .row .card .card {
+    margin: 0rem;
+    transform: translateX(-25px);
+}
+
+#customer .row .card .card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(245, 241, 241);
+}
+
+
+/* FAQ section */
+
+#faq .accordion-item {
+    margin: 1.6rem;
+    box-shadow: 0px 0px 25px rgb(233, 232, 232);
+    border-radius: 10px;
+}
+
+#faq .accordion-item p {
+    opacity: 0.8;
+}
+
+
+/* Footer section */
+
+#footer {
+    background-color: rgba(3, 19, 48, 0.788);
+}
+
+#footer .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(134, 133, 133, 0.651);
+}
+
+#footer .title h1 {
+    width: 800px;
+}
+
+#footer .input-group input {
+    background: transparent;
+}
+
+#footer .row .col-12 {
+    margin: 15px auto;
+}
+
+#footer .title button {
+    padding: 17px;
+}
+
+
+/* media query */
+
+@media (min-width:720px) and (max-width:992px) {
+    #customer .row .col-lg-4:nth-child(4) {
+        transform: translateY(0px);
+    }
+    #customer .row .col-lg-4:nth-child(6) {
+        transform: translateY(0px);
+    }
+    #customer .row .col-lg-4:nth-child(3) {
+        transform: translateY(-60px);
+    }
+    #customer .row .col-lg-4:nth-child(5) {
+        transform: translateY(-50px);
+    }
+}
+
+@media (max-width:720px) {
+    #str .card:nth-child(2) {
+        transform: translateX(0px);
+    }
+    #customer .row .col-lg-4:nth-child(4) {
+        transform: translateY(0px);
+    }
+    #customer .row .col-lg-4:nth-child(6) {
+        transform: translateY(0px);
+    }
+    #customer .row .col-lg-4:nth-child(3) {
+        transform: translateY(0px);
+    }
+    #customer .row .col-lg-4:nth-child(5) {
+        transform: translateY(0px);
+    }
+    #Lproject {
+        display: none;
+    }
+    #compFacts .box-2 .card {
+        text-align: center;
+    }
+    #compFacts .box-2 .card .social {
+        justify-content: center;
+    }
+}
